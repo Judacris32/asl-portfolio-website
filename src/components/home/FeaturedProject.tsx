@@ -12,7 +12,7 @@ const STACK = [
   { name: "Node.js", logo: "/icons/stack/nodejs.png" },
   { name: "Tailwind CSS", logo: "/icons/stack/tailwind.png" },
   { name: "Supabase", logo: "/icons/stack/postgresql.png" },
-  { name: "Google Maps API", logo: "/icons/stack/google-maps.png" },
+  { name: "Google Maps API", logo: "/icons/stack/google-maps-gps.png" },
   { name: "Stripe", logo: "/icons/stack/stripe.png" },
 ];
 

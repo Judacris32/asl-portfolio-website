@@ -36,7 +36,6 @@ export function ExpertisePreview() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {EXPERTISE_CATEGORIES.map((category, i) => {
-            const IconComponent = category.icon;
             // Preview shows the skills capped so the card stays compact
             const previewSkills = category.skills.slice(0, 4);
 
@@ -61,12 +60,7 @@ export function ExpertisePreview() {
                   )}
                   <div className="absolute inset-0 bg-gradient-to-t from-emerald-950/80 via-emerald-950/40 to-transparent dark:from-black/90 dark:via-black/50" />
                   
-                  <div className="absolute bottom-3 left-4 right-4 flex items-center gap-2.5">
-                    {IconComponent && (
-                      <div className="h-8 w-8 rounded-lg bg-emerald-600/30 dark:bg-emerald-500/30 backdrop-blur-md flex items-center justify-center text-emerald-200 border border-emerald-400/40 shrink-0">
-                        <IconComponent className="h-4 w-4" />
-                      </div>
-                    )}
+                  <div className="absolute bottom-3 left-4 right-4">
                     <p className="text-sm font-bold text-white drop-shadow-sm leading-snug truncate">
                       {category.title}
                     </p>
@@ -81,13 +75,12 @@ export function ExpertisePreview() {
                   {previewSkills.length > 0 && (
                     <div className="flex flex-wrap gap-1.5 pt-3 border-t border-emerald-600/20 dark:border-emerald-500/20">
                       {previewSkills.map((skill) => {
-                        const SkillIcon = skill.icon;
                         return (
                           <span
                             key={skill.name}
                             className="inline-flex items-center gap-1.5 pl-1.5 pr-2.5 py-1 rounded-xl text-[11px] font-semibold bg-emerald-50 dark:bg-emerald-950/60 text-emerald-800 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/80 shadow-2xs"
                           >
-                            {skill.logo ? (
+                            {skill.logo && (
                               <span className="h-4 w-4 rounded-full bg-white flex items-center justify-center overflow-hidden shrink-0 ring-1 ring-black/5">
                                 <Image
                                   src={skill.logo}
@@ -97,9 +90,7 @@ export function ExpertisePreview() {
                                   className="object-contain"
                                 />
                               </span>
-                            ) : SkillIcon ? (
-                              <SkillIcon className="h-3 w-3 text-emerald-600 dark:text-emerald-400 shrink-0" />
-                            ) : null}
+                            )}
                             <span className="truncate max-w-[90px]">{skill.name}</span>
                           </span>
                         );

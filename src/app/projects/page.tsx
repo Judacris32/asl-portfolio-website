@@ -49,7 +49,7 @@ const TECHNOLOGY_STACK = [
   ]},
   { category: "UI Components", items: [
     { name: "shadcn/ui", logo: "/icons/stack/shadcn.png" },
-    { name: "Radix UI Primitives", logo: "/icons/stack/radix.png" }
+    { name: "Radix UI Primitives", logo: "/icons/stack/Radix.png" }
   ]},
   { category: "State Management", items: [
     { name: "TanStack Query", logo: "/icons/stack/tanstack.png" },
