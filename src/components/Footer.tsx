@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin, Mail, Github, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const FOOTER_LINKS = [
   { label: "About", href: "/about" },
@@ -67,27 +67,49 @@ export function Footer() {
               <a
                 href="mailto:debolipede@artservicesltd.co.uk"
                 aria-label="Email"
-                className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 text-muted dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs"
+                className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs overflow-hidden"
               >
-                <Mail className="h-4 w-4" />
+                <Image
+                  src="/icons/social/gmail.png"
+                  alt="Email"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/adebowaleslipede/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 text-muted dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs"
+                className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs overflow-hidden"
               >
-                <Linkedin className="h-4 w-4" />
+                <Image
+                  src="/icons/social/linkedin.png"
+                  alt="LinkedIn"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
               </a>
               <a
                 href="https://github.com/Debzy1985/DV-CODE-ARTServices"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 text-muted dark:text-slate-400 hover:text-emerald-700 dark:hover:text-emerald-400 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs"
+                className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs overflow-hidden"
               >
-                <Github className="h-4 w-4" />
+                {/* GitHub's mark is black-on-transparent — a white chip keeps
+                    it visible in dark mode instead of vanishing into the bg. */}
+                <span className="h-full w-full flex items-center justify-center bg-white rounded-xl">
+                  <Image
+                    src="/icons/social/github.png"
+                    alt="GitHub"
+                    width={18}
+                    height={18}
+                    className="object-contain"
+                  />
+                </span>
               </a>
             </div>
             <div className="pt-2">

@@ -22,7 +22,7 @@ const AWARDS = [
     year: "2024",
     badge: "National Award",
     description:
-      "Honored for pioneering contributions to tech development, platform scaling, and impactful software execution — awarded at the 10th edition of NiTA.",
+      "Honored for pioneering contributions to tech development, platform scaling, and impactful software execution, awarded at the 10th edition of NiTA.",
     image: "/images/awards/nita-award.png",
     linkUrl: "https://blueprint.ng/adebowale-lipede-emerges-most-outstanding-software-solutions-architect-at-nigeria-technology-awards/",
     linkText: "Read Blueprint Coverage",
@@ -33,7 +33,7 @@ const AWARDS = [
     year: "2025",
     badge: "Press Feature",
     description:
-      "Profiled by Disrupt Africa for the work behind ART Services — a digital platform connecting stranded motorists with recovery operators through real-time location and dispatch, built for markets where roadside help is hard to find.",
+      "Profiled by Disrupt Africa for the work behind ART Services, a digital platform connecting stranded motorists with recovery operators through real-time location and dispatch, built for markets where roadside help is hard to find.",
     image: "/images/awards/disrupt-africa.png",
     linkUrl: "https://disruptafrica.com/2025/11/21/how-nigerian-technologist-adebowale-lipede-is-building-digital-solutions-for-africas-roadside-assistance-industry/",
     linkText: "Read the Disrupt Africa Feature",
