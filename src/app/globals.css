@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink dark:bg-midnight dark:text-slate-200;
+    @apply font-body antialiased;
+    transition: background-color 0.35s ease, color 0.35s ease;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+
+  /* Visible keyboard focus, kept consistent across light/dark */
+  :focus-visible {
+    outline: 2px solid #16A34A;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .dark :focus-visible {
+    outline-color: #22C55E;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
