@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { ArrowRight, ExternalLink } from "lucide-react";
 
 const STACK = [
-  { name: "Next.js", logo: "/icons/stack/nextjs.png" },
   { name: "React 18", logo: "/icons/stack/react.png" },
   { name: "TypeScript", logo: "/icons/stack/typescript.png" },
   { name: "Node.js", logo: "/icons/stack/nodejs.png" },

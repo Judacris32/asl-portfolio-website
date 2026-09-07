@@ -93,23 +93,19 @@ export function Footer() {
                 />
               </a>
               <a
-                href="https://github.com/Debzy1985/DV-CODE-ARTServices"
+                href="https://www.linkedin.com/in/adebowaleslipede/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="GitHub"
+                aria-label="LinkedIn"
                 className="h-10 w-10 flex items-center justify-center rounded-xl border border-hairline dark:border-midnight-hairline bg-white/60 dark:bg-midnight-surface/60 hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors shadow-2xs overflow-hidden"
               >
-                {/* GitHub's mark is black-on-transparent — a white chip keeps
-                    it visible in dark mode instead of vanishing into the bg. */}
-                <span className="h-full w-full flex items-center justify-center bg-white rounded-xl">
-                  <Image
-                    src="/icons/social/github.png"
-                    alt="GitHub"
-                    width={18}
-                    height={18}
-                    className="object-contain"
-                  />
-                </span>
+                <Image
+                  src="/icons/social/github.png"
+                  alt="GitHub"
+                  width={20}
+                  height={20}
+                  className="object-contain"
+                />
               </a>
             </div>
             <div className="pt-2">
