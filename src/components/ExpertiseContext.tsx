@@ -39,7 +39,7 @@ const REASONS = [
   {
     icon: Rocket,
     title: "Vercel for deploys without drama",
-    body: "Preview deployments on every branch mean a client or stakeholder can see a real, working version of a feature before it touches production — no guessing from a description, no surprises on launch day.",
+    body: "Preview deployments on every branch mean a client or stakeholder can see a real, working version of a feature before it touches production, no guessing from a description, no surprises on launch day.",
   },
 ];
 
