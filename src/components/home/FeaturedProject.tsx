@@ -96,7 +96,7 @@ export function FeaturedProject() {
                 href="/projects"
                 className="inline-flex items-center justify-center gap-2 border border-hairline dark:border-midnight-hairline text-ink dark:text-white px-5 py-3 rounded-full text-sm font-semibold hover:border-emerald-600/40 dark:hover:border-emerald-500/40 transition-colors"
               >
-                Read the full case
+                Read the full Project
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
